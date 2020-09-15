@@ -5,10 +5,10 @@ import Logo from '../../assets/logo.svg'
 
 const Header: React.FC = () => {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" className="mb-3">
       <Container>
         <Navbar.Brand href="/">
-          <Logo /> TFTournaments
+          <Logo /> <strong>TFTournaments</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            Deseja gerar chaves para seu torneio? <a href="signin">Entrar</a> ou{' '}
+            Deseja gerar chaves para seu torneio? <a href="signin">Entre</a> ou{' '}
             {''}
             <a href="signup">Cadastre-se</a>
           </Navbar.Text>
